@@ -35,10 +35,10 @@ public class ArticleMain {
 
 	public void addArticle() {
 		Article article = new Article();
-		article.setTitle("This is title.");
-		article.setContent("This is content");
-		article.setUserId("1");
-		article.setName("조원석");
+		article.setTitle("타이틀입니다.");
+		article.setContent("컨택트입니다.");
+		article.setUserId("2");
+		article.setName("정택환");
 		if (articleDao.addArticle(article) > 0)
 			System.out.println("글을 추가했습니다.");
 		else
@@ -47,9 +47,9 @@ public class ArticleMain {
 
 	public void updateArticle() {
 		Article article = new Article();
-		article.setArticleId("7");
-		article.setTitle("This is modified title.");
-		article.setContent("This is modified content");
+		article.setArticleId("3");
+		article.setTitle("타이틀을 업데이트했습니다.");
+		article.setContent("컨택트를 업데이트 하였습니다.");
 		if (articleDao.updateArticle(article) > 0)
 			System.out.println("글을 수정했습니다.");
 		else
@@ -57,7 +57,7 @@ public class ArticleMain {
 	}
 
 	public void deleteArticle() {
-		if (articleDao.deleteArticle("8") > 0)
+		if (articleDao.deleteArticle("5") > 0)
 			System.out.println("글을 삭제했습니다.");
 		else
 			System.out.println("글을 삭제하지 못했습니다.");
